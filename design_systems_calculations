@@ -1,0 +1,29 @@
+TOTAL_USERS = 1,100
+DAILY_ACTIVE_USERS = TOTAL_USERS * 50% = 550
+DAILY_TRANSACTIONS_PER_USER = 5
+
+55,000  * 100KB
+
+Queries Per Second
+-------------------
+QPS (Queries Per Second) = DAILY_ACTIVE_USERS * DAILY_TRANSACTIONS_PER_USER / 24 horas / 3600 = ~0.3
+PEAK_QPS = 2 * QPS = ~0.06
+
+
+Transactions Per Second
+-------------------
+TPS (Queries Per Second) = DAILY_ACTIVE_USERS * DAILY_TRANSACTIONS_PER_USER / 24 horas / 3600 = ~11.57
+PEAK_TPS = 2 * QPS = ~23.14
+
+DB Storage
+----------
+AVG_PAYLOAD_SIZE=1KB
+DAILY_MEDIA_STORAGE = DAILY_ACTIVE_USERS * 2 * 10% * AVG_PAYLOAD_SIZE = 10 MB per day
+5-year media storage: DAILY_MEDIA_STORAGE * 365 (days) * 5 (years) = 18.25 GB
+
+Media storage
+-------------
+AVG_SIZE=1MB
+DAILY_MEDIA_STORAGE = DAILY_ACTIVE_USERS * 2 * 10% * AVG_SIZE = 22 GB per day
+5-year media storage: DAILY_MEDIA_STORAGE * 365 (days) * 5 (years) = 110 GB
+k6 premium
